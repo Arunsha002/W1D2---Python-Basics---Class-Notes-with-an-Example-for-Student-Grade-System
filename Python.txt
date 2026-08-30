@@ -1,0 +1,160 @@
+PYTHON CLASS NOTES
+
+1. DATA TYPES
+
+Basic Data Types:
+- int → Integer
+- float → Decimal numbers
+- str → String / Text
+- bool → True / False
+
+Type Conversion:
+- Converting one data type into another
+- int(), float(), str(), bool()
+
+type() → Used to check the data type
+
+
+2. VARIABLES & DATA STRUCTURES
+
+Variables → Used to store data
+
+Data structures:
+- List → []
+- Tuple → ()
+- Set → {}
+- Dictionary → {key: value}
+
+Indexing:
+- Forward indexing starts from 0
+- Reverse/Negative indexing starts from -1
+
+
+3. CONTROL FLOW
+
+Used to control the flow of execution.
+
+if, elif, else
+
+Remember:
+- : should be used after the condition
+- Indentation is very important in Python
+
+Nested IF:
+- An if statement inside another if statement
+- If the first condition is satisfied, then the next/nested if is checked
+- Extra indentation is required
+
+
+4. LOOPS
+
+Loops → Used to repeat code or perform an action multiple times
+
+FOR LOOP:
+- Used to iterate through a sequence or repeat code for a specific number of times
+- Commonly used with range(), Lists, Strings, etc.
+
+WHILE LOOP:
+- Runs as long as the condition is True
+
+BREAK:
+- Stops the complete loop
+- Program continues with the code after the loop
+
+CONTINUE:
+- Skips the remaining code in the current iteration
+- Moves to the next iteration
+
+
+5. FUNCTIONS
+
+Functions → Reusable block of code used to perform a particular task
+
+def → Keyword used to define a function
+
+Basic function:
+def function_name():
+    # code
+
+Function with parameters:
+def function_name(parameter):
+    # code
+
+Function with return:
+def function_name():
+    return value
+
+
+6. MODULES
+
+Modules → Used to organize and reuse code from other Python files.
+
+A module can contain:
+- Functions
+- Variables
+- Classes, etc.
+
+__init__.py:
+- Used to indicate a Python package
+- Can be an empty file for basic packages
+
+Importing a function:
+
+from foldername.filename import functionname
+
+
+7. ERROR HANDLING
+
+Used to handle errors/exceptions without stopping the program unexpectedly.
+
+try:
+- Contains code that may cause an error
+
+except:
+- Catches the error/exception
+- Performs an alternative action
+
+else:
+- Runs only if the try block executes without an error
+
+finally:
+- Always runs, whether there is an error or not
+
+Exception:
+- Can be used to catch/generalize exceptions
+
+Example:
+except Exception as e:
+    print(e)
+
+
+8. FILE HANDLING
+
+Used to work with files:
+- Read
+- Write
+- Append
+
+open():
+- Used to open a file
+
+Modes:
+- r → Read
+- w → Write
+- a → Append
+
+.read()
+- Reads the content of the file
+
+.write()
+- Writes content to the file
+
+Important:
+- w mode can overwrite existing content
+- a mode adds content to the end of the file
+
+Better approach:
+with open("example.txt", "r") as file:
+    data = file.read()
+
+with → Automatically closes the file after use
